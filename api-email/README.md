@@ -1,0 +1,1 @@
+API responsável por enviar email.
