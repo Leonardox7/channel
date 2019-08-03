@@ -1,0 +1,28 @@
+{
+  "name": "api-email",
+  "version": "1.0.0",
+  "description": "API responsável por enviar email.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonardox7/channel.git"
+  },
+  "author": "Leonardo De Castro Maia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leonardox7/channel/issues"
+  },
+  "homepage": "https://github.com/Leonardox7/channel#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "colors": "^1.3.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
+  }
+}
