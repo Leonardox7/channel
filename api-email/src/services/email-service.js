@@ -22,12 +22,12 @@ class EmailService {
                 to: to,
                 subject: subject,
                 text: text,
-                html: '<b>Hello world?</b>'
+                html:`<b>${text}</b>`
             })
-        } catch (e) {
-            Log.error(e)
-        }
+    } catch(e) {
+        Log.error(e)
     }
+}
 
 }
 

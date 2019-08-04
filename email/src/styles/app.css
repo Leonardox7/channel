@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  font-family: Arial !important;
+  display: inline;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#email {
+  font-family: Arial !important;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 32%;
+  margin-bottom: 5%;
+  height: 30%;
+  width: 30%
+}
+
+.error {
+  text-align: center;
+  margin-top: 0;
+  background-color: rgb(228, 74, 74);
+  color:  white;
+}
+
+.sucess {
+  text-align: center;
+  margin-top: 0;
+  background-color: rgb(77, 202, 108);
+  color:  white;
+}

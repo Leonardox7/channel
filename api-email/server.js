@@ -6,7 +6,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const EmailRoute = require('./src/routes/emailRoute')
+const EmailRoute = require('./src/routes/email-route')
 
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
