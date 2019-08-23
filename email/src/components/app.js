@@ -35,7 +35,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className='formTeste'>
+      <div className=''>
         {(this.state.hasError) ? <div className='error'>{this.state.message}</div> : <div className='sucess'>{this.state.message}</div>}
 
         <Form id='email'>
