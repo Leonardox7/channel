@@ -1,24 +1,30 @@
-const colors = require('colors')
-const moment = require('moment')
 
-var date = moment().format('DD-MM-YY HH:mm:ss')
+const winston = require('winston')
+const logger = winston.createLogger({
+    format: winston.format.combine(
+        winston.format.timestamp({ format: 'DD-MM-YY HH:mm:ss' }),
+        winston.format.simple(),
+        winston.format.printf(msg => colorizer.colorize(msg.level, `${msg.timestamp} - ${msg.level}: `) + `${msg.message}`)
+    ),
+    transports: [new transports.Console()]
+
+})
 
 class Logger {
-
     static info(msg) {
-        console.log(colors.blue(`info ${date}`), msg)
+        logger.info(msg)
     }
 
     static warn(msg) {
-        console.log(colors.yellow(`warn ${date}`), msg)
+        logger.warn(msg)
     }
 
     static error(msg) {
-        console.log(colors.red(`error ${date}`), msg)
+        logger.error(msg)
     }
 
     static sucess(msg) {
-        console.log(colors.green(`sucess ${date}`), msg)
+        logger.sucess(msg)
     }
 }
 
