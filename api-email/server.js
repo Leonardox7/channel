@@ -5,12 +5,11 @@ const Log = require('./src/services/logger')
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const bodyParser = require('body-parser')
 const EmailRoute = require('./src/routes/email-route')
 
 app.use(cors())
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
 
 new EmailRoute(app).route()
 

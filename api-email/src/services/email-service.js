@@ -2,6 +2,7 @@ const nodemailer = require('nodemailer');
 
 class EmailService {
     async transporter() {
+        console.log( { user: process.env.EMAIL, pass: process.env.PASS })
         return nodemailer.createTransport({
             service: 'gmail',
             port: 587,
