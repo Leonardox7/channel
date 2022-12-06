@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/Leonardox7/channel#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "colorizer": "^2.0.2",
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "moment": "^2.24.0",
     "nodemailer": "^6.3.0",
     "winston": "^3.2.1"
